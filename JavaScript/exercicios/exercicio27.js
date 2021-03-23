@@ -18,8 +18,13 @@ let crescimento = (a, b, c, d) => {
         alturaLongoPrazoMenor = criancaMenor + (taxaCriancaMenor*tempo)
         if(alturaLongoPrazoMenor <= alturaLongoPrazoMaior){
             idade = tempo
-        } 
+        }
     }
-    return 'A criança originalmente mais baixa ultrapassará a altura da outra com '+idade+' anos.'
+    if(idade<17){
+        resposta = 'A criança originalmente mais baixa ultrapassará a altura da outra com '+idade+' anos.'
+    } else {
+        resposta = 'A criança mais alta sempre vai ser mais alta.'
+    }
+    return resposta
 }
-console.log(crescimento(100, 90, 3, 5))
+console.log(crescimento(100, 90, 5, 3))
