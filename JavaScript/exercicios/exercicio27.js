@@ -21,10 +21,10 @@ let crescimento = (a, b, c, d) => {
         }
     }
     if(idade<17){
-        resposta = 'A criança originalmente mais baixa ultrapassará a altura da outra com '+idade+' anos.'
+        resposta = 'A criança originalmente mais baixa ultrapassará a altura da outra daqui a '+idade+' anos.'
     } else {
         resposta = 'A criança mais alta sempre vai ser mais alta.'
     }
     return resposta
 }
-console.log(crescimento(100, 90, 5, 3))
+console.log(crescimento(140, 120, 3, 5))
