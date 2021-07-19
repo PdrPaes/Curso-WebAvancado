@@ -3,6 +3,7 @@ aluno, considerando que o peso para a maior nota seja 4 e para as duas restantes
 aluno, suas três notas, a média calculada e uma mensagem "APROVADO" se a média for maior ou igual a 5 e
 "REPROVADO" se a média for menor que 5. Repita a operação até que o código lido seja negativo.*/
 media = (a, b, c, d) => {
+    if (a >= 0){
         nota1 = b
         nota2 = c
         nota3 = d
@@ -23,7 +24,11 @@ media = (a, b, c, d) => {
             resultado = 'Reprovado.'
         }
     return 'O Aluno de código '+ a +' tirou como nota na Primeira Prova: '+ nota1 +' Pontos. Na Segunda: '+nota2+' Pontos. Na Terceira: '+nota3+' Pontos e obteve média '+mediaPonderada+ 'e por fim foi '+ resultado
+    } else {
+        return 'Código de Aluno Inválido'
+    }
 }
+
 console.log(media(102,2,3,4))
 console.log(media(103,9.2,6,8.5))
 console.log(media(105,6,6,6))
