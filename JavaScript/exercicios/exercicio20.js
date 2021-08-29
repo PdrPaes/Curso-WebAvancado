@@ -17,4 +17,4 @@ let cedulas = function(a){
     
     return 'O valor ' + a + ' corresponde a ' +n100 +' cédulas de R$100, '+ n50 + ' cédulas de R$50, '+ n10 +' cédulas de R$10, '+n5+' cédulas de R$5, '+n1+' cédulas de R$1'        
 }
-console.log(cedulas(187))
+console.log(cedulas(166))  

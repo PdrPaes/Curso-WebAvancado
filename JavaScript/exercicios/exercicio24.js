@@ -4,5 +4,3 @@ while(a<12 && a >0){
     console.log('Hello World!')
     a--
     }
-
-
